@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Button from './CensoredButton';
+import CensoredButton from './CensoredButton';
 import { readFile , writeFile } from '../helpers/file-helpers';
 
 function HitCounter()
@@ -16,7 +16,7 @@ function HitCounter()
     return (
         <p>
             You are visitor number:
-            <span> </span> <Button hits={ obj.hits } />
+            <span> </span> <CensoredButton hits={ obj.hits } />
         </p>
     );
 }
